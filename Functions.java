@@ -6,22 +6,6 @@ public class Functions {
     public static int[] K = new int[]{2, 13, 22, 6, 11, 25, 7, 18, 3, 17, 19, 10};
 
     /*
-    Sets the two constants *wordLength* and *K* to the appropriate values for SHA256 or SHA512
-     */
-    public void setConstants(String bits) {
-        switch (bits) {
-            case "256":
-                wordLength = 32;
-                K = new int[]{2, 13, 22, 6, 11, 25, 7, 18, 3, 17, 19, 10};
-                break;
-            case "512":
-                wordLength = 64;
-                K = new int[]{28, 34, 39, 14, 18, 41, 1, 8, 7, 19, 61, 6};
-                break;
-        }
-    }
-
-    /*
     Pad:
     Adds k *desiredLength - str.length* "0".
      */
